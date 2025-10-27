@@ -1,8 +1,8 @@
 /* Paleta de Colores y Tipografía */
 :root {
-    --primary-color: #1a73e8; /* Azul más vibrante (estilo Google) */
-    --secondary-color: #34495e; /* Azul marino/gris para el encabezado */
-    --light-bg: #f8f9fa; /* Fondo claro */
+    --primary-color: #1a73e8; 
+    --secondary-color: #34495e; 
+    --light-bg: #f8f9fa; 
     --hover-color: #0b50b2;
     --font-family: 'Montserrat', sans-serif;
     --text-color: #333;
@@ -20,7 +20,7 @@ body {
 
 .container {
     width: 90%;
-    max-width: 1100px; /* Ancho un poco mayor */
+    max-width: 1100px; 
     margin: 0 auto;
     padding: 20px 0;
 }
@@ -31,7 +31,7 @@ header {
     color: white;
     padding: 60px 0;
     text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra más fuerte */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
 header h1 {
@@ -51,7 +51,7 @@ header p {
 }
 
 #documents h2 {
-    border-bottom: 3px solid var(--primary-color); /* Línea más marcada */
+    border-bottom: 3px solid var(--primary-color); 
     padding-bottom: 10px;
     margin-bottom: 40px;
     color: var(--secondary-color);
@@ -74,15 +74,15 @@ header p {
     margin-bottom: 40px;
     padding: 30px;
     border: 1px solid #e9ecef;
-    border-radius: 12px; /* Esquinas más redondeadas */
+    border-radius: 12px; 
     background-color: var(--light-bg); 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); /* Sombra suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08); 
 }
 
 .document-category h3 {
     color: var(--primary-color);
     margin-top: 0;
-    border-bottom: 1px solid #cceeff; /* Línea de color claro */
+    border-bottom: 1px solid #cceeff; 
     padding-bottom: 15px;
     font-weight: 600;
     font-size: 1.4em;
@@ -94,6 +94,7 @@ ul {
 }
 
 li {
+    /* La clave del diseño responsivo está aquí: por defecto es flex */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -116,56 +117,8 @@ li:last-child {
     font-size: 0.95em;
     color: #6c757d;
     margin-right: 30px;
-    min-width: 180px; /* Más espacio para la meta-data */
+    min-width: 180px; 
     text-align: right;
 }
 
-/* Botón de Descarga */
-.btn-download {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 10px 18px;
-    border: none;
-    border-radius: 20px; /* Botón tipo "pill" */
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.2s;
-    font-weight: 600;
-    display: inline-block;
-    white-space: nowrap; /* Evita que el texto del botón se rompa */
-}
-
-.btn-download:hover {
-    background-color: var(--hover-color); 
-    transform: translateY(-2px); /* Efecto 3D sutil */
-}
-
-/* Pie de página (Footer) */
-footer {
-    background: var(--secondary-color);
-    color: white;
-    text-align: center;
-    padding: 30px 0;
-    font-size: 0.95em;
-}
-
-footer a {
-    color: #a8c8ff; /* Color de enlace claro */
-    text-decoration: none;
-    transition: color 0.3s;
-}
-
-footer a:hover {
-    color: white;
-    text-decoration: underline;
-}
-
-.social-links {
-    margin-top: 10px;
-    font-size: 1.1em;
-}
-
-.social-links a {
-    margin: 0 10px;
-    font-weight: 600;
-}
+/* Bot
